@@ -1,0 +1,1 @@
+transcript_id	gene_id	gene_name	chromosome	strand	ID	site_position	site_count	site_abundance	transcript_biotype	a_content

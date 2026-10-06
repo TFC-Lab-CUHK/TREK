@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "species": "Homo sapiens",
+  "sample": "K562",
+  "platform": "Oxford Nanopore",
+  "library_type": "direct RNA",
+  "run_accession": "SRR9304718",
+  "bioproject": "PRJNA548942",
+  "public_run_url": "https://www.ncbi.nlm.nih.gov/sra/?term=SRR9304718",
+  "reference_assembly": "GCF_000001405.40_GRCh38.p14",
+  "source_bam_sha256": "21c07cf4a0aa428de3611f1b1b030385d1ec3d3e2872a84d9c9f9c85aa0037ef",
+  "source_gtf_sha256": "7df73c83096f08a84f50f19b050afd50081b8fa9c21e2ccbae6f4d46f23e8107",
+  "source_fasta_name": "GCF_000001405.40_GRCh38.p14_genomic.fna",
+  "source_bam_mapping": {
+    "aligner": "minimap2 2.30-r1287",
+    "preset": "splice",
+    "splice_strand": "b",
+    "kmer": 14,
+    "reference": "full GRCh38.p14",
+    "junction_guide": "RefSeq BED12",
+    "secondary": "no"
+  },
+  "sequence_policy": "Original query sequences and qualities recovered from primary BAM records; reverse-complemented BAM sequences and reversed quality arrays restored to original read orientation. No sequence trimming, synthetic bases, or fabricated quality values.",
+  "selection": {
+    "seed": 20261004,
+    "min_mapq": 20,
+    "reads_per_transcript": 100,
+    "rule": "Lowest SHA256(seed|transcript_id|read_id) ranks within exact full-intron-chain matches; exclude hard-clipped or quality-missing records and alignments outside the reference crop.",
+    "sample_is_for_demonstration_not_inference": true,
+    "transcripts": [
+      {
+        "transcript_id": "NM_181697.3",
+        "gene": "PRDX1",
+        "strand": "-",
+        "exons": 6,
+        "eligible_reads": 113,
+        "selected_reads": 100,
+        "excluded_alignment_counts": {
+          "different_intron_chain": 123,
+          "alignment_filter": 6
+        }
+      },
+      {
+        "transcript_id": "NM_001289746.2",
+        "gene": "GAPDH",
+        "strand": "+",
+        "exons": 8,
+        "eligible_reads": 145,
+        "selected_reads": 100,
+        "excluded_alignment_counts": {
+          "different_intron_chain": 578,
+          "alignment_filter": 28
+        }
+      },
+      {
+        "transcript_id": "NM_002046.7",
+        "gene": "GAPDH",
+        "strand": "+",
+        "exons": 9,
+        "eligible_reads": 250,
+        "selected_reads": 100,
+        "excluded_alignment_counts": {
+          "different_intron_chain": 473,
+          "alignment_filter": 28
+        }
+      }
+    ]
+  },
+  "reference_regions": [
+    {
+      "contig": "GAPDH_region",
+      "original_chromosome": "NC_000012.12",
+      "original_start_0based": 6532516,
+      "original_end_0based_exclusive": 6540371,
+      "transcript_ids": "NM_001289746.2;NM_002046.7"
+    },
+    {
+      "contig": "PRDX1_region",
+      "original_chromosome": "NC_000001.11",
+      "original_start_0based": 45509050,
+      "original_end_0based_exclusive": 45523884,
+      "transcript_ids": "NM_181697.3"
+    }
+  ],
+  "coordinates": "GTF and output PAS positions are 1-based on cropped contigs. Add original_start_0based from reference_regions.tsv to recover original 1-based genome positions. BED12 is 0-based half-open.",
+  "build_script_sha256": "dc55c6bdb3e0850b0849ae0db3bf40a820ed9099c9b64bf6e717d99bf85edb81",
+  "files": {
+    "inputs.tsv": {
+      "bytes": 35,
+      "sha256": "b3b04fff86495e2903d5bacaf25ca2d8395b3ce655c80c168cac85742dd0eb0a"
+    },
+    "reads.fastq.gz": {
+      "bytes": 285995,
+      "sha256": "39b56001adee11ebedec0209af028798292a813a7dd46b93fc113acf2f58506c"
+    },
+    "reference.fa": {
+      "bytes": 23096,
+      "sha256": "0d8e5f4227d005a548d3bb346a0138e046ab97821eaa96303ac7b07eda34e75c"
+    },
+    "reference.fa.fai": {
+      "bytes": 57,
+      "sha256": "a1b838cdace27a62948f085315bbb4e2ee836fae56ea6f02c071d8026416a493"
+    },
+    "annotation.gtf": {
+      "bytes": 20816,
+      "sha256": "5a235fa50cdb9033f9482e5bfcb5376d140c78481e7cc9614411c51afc368908"
+    },
+    "annotation.junctions.bed": {
+      "bytes": 360,
+      "sha256": "cce65d0648ee138bc1dcb32877ba219d3a4ad80315b86b1fe01fda8c4ab69761"
+    },
+    "reference_regions.tsv": {
+      "bytes": 219,
+      "sha256": "1504d3c09513ade039a69aea1591c4d37c57729adce288c04eeef55f82347af4"
+    },
+    "selected_reads.tsv": {
+      "bytes": 63107,
+      "sha256": "eccd71dfc7a5e52e0f0683dbf41f7f1c746e39a09652af94a769e859cff03946"
+    }
+  }
+}

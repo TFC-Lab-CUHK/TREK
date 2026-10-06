@@ -1,0 +1,56 @@
+{
+  "software": {
+    "numpy": "2.3.0",
+    "pandas": "2.3.0",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.7.1",
+    "pysam": "0.23.3",
+    "biopython": "1.85",
+    "interlap": "0.2.7",
+    "joblib": "1.5.3",
+    "tqdm": "4.67.1",
+    "TREK": "1.0.0",
+    "python": "3.12.3",
+    "minimap2": "2.30-r1287"
+  },
+  "parameters": {
+    "input_list": "inputs.tsv",
+    "platform": "drna",
+    "splice_strand": "f",
+    "exclude_sa_tagged_reads": true,
+    "threads": 2,
+    "serial": true,
+    "min_overlap": 0.5,
+    "single_exon_strand_rule": "same_strand_if_u_f_else_unique_eligible_strand_v1",
+    "single_exon_terminal_exon_filter": "terminal_fraction_ge_best_single_fraction_v1",
+    "single_site_fallback_support": "all_assigned_reads",
+    "junction_guide": "BED12_from_parsed_transcript_models",
+    "min_reads": 10,
+    "min_cluster_size": 10,
+    "max_clusters": 5,
+    "gmm_selection_policy": "converged_finite_score_skip_candidate_numerical_errors_v1",
+    "min_distance": 50,
+    "min_dominance": 0.3,
+    "min_sharpness": 0.5,
+    "priming_window": 20,
+    "priming_a_threshold": 0.5,
+    "priming_min_consecutive_a": 6,
+    "internal_priming_filter": true,
+    "random_seed": 42
+  },
+  "caller_sha256": {
+    "alignment_processor.py": "534dc8834e7b0419a01ad14211637f30525082a49530e4e478dc8a2b33661f40",
+    "apa_finder.py": "39502f17d84e32c33ea6bd962b58b2a38c89de75eecad93de7587ea488a0606f",
+    "gtf_processor.py": "fefd046382d4065f85f526bd9d6e1c36a10c52acaf8c9da711949f484f52f2c5",
+    "gff_processor.py": "b55c4125bbaa8bd25367b20534fb497b276b9023c8ec7c424a50e9c5cec5741e",
+    "internal_priming_filter.py": "171a14585386d715aaa775427e9cb3bba2faad07c740745b045d2776260679a2",
+    "run_trek.py": "1e60242d9040f47498e1bb15322e49dc0ac2b818f618d1a7f615f7fae8989109"
+  },
+  "expected_output_files": {
+    "assignment_counts.tsv": "30f0cc81acb319a77f3d1d87d1c8cb676f6add49f4b5ad9b267b16c8355dbdf3",
+    "example.summary.txt": "65f1e9ee909f229b100115280a508d546b5ebc5be649bbf87a49df0251b95b07",
+    "example.internal_priming_removed.txt": "2b24bfcc589e104bdd53e15e55969991c01b73ef996d03ea2a3c9693c0e336ac",
+    "example.apa_sites.txt": "60c787b70bcd881d62d02ceb3603a8f4df6bb6e0ae32e45bd77a1982904bb17c",
+    "assignment_ends.tsv": "541fe83cd71dc5ff599283d47c45f8db5e55bd6950f4a37db772241133018e59"
+  }
+}

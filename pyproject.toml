@@ -1,0 +1,67 @@
+[tool.pyright]
+typeCheckingMode = "off"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "TREK"
+version = "1.0.0"
+description = "TREK - Transcription End site identifier from long-read data"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+authors = [
+    {name = "Jizhou ZHANG", email = "jizhouzhang@cuhk.edu.hk"}
+]
+maintainers = [
+    {name = "Jizhou ZHANG", email = "jizhouzhang@cuhk.edu.hk"}
+]
+keywords = [
+    "bioinformatics",
+    "transcriptome",
+    "long-read",
+    "RNA-seq",
+    "Nanopore",
+    "PacBio",
+    "polyadenylation",
+    "alternative-polyadenylation",
+    "TES"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent",
+    "Environment :: Console"
+]
+
+dependencies = [
+    "numpy>=1.19.0",
+    "pandas>=1.2.0",
+    "scikit-learn>=0.24.0",
+    "pysam>=0.16.0",
+    "biopython>=1.79",
+    "interlap>=0.2.7",
+    "joblib>=1.3.0",
+    "tqdm>=4.60.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/TFC-Lab-CUHK/TREK"
+"Source Code" = "https://github.com/TFC-Lab-CUHK/TREK"
+
+[project.scripts]
+trek = "trek.run_trek:main"
+unify_apa_sites = "trek.unify_apa_sites:main"
+annotate_apa = "trek.annotate_apa:main"
+
+[tool.setuptools]
+packages = ["trek"]
+
+[tool.setuptools.package-data]
+trek = ["*.txt", "*.md", "*.pl", "resources/*.tsv", "resources/*.md"]

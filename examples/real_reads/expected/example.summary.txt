@@ -1,0 +1,9 @@
+TREK Summary
+==================================================
+Total transcripts analyzed: 3
+Transcripts with alternative TES: 1
+Percentage with APA: 33.33%
+
+Distribution of TES per transcript:
+  1 sites: 2 transcripts
+  2 sites: 1 transcripts

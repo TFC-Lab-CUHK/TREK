@@ -1,0 +1,7 @@
+transcript_id	gene_id	gene_name	chromosome	strand	site_position	site_count	site_abundance	transcript_biotype
+T1	G1	Gene1	NC_000001.11	+	1000	30	0.75	mRNA
+T1	G1	Gene1	NC_000001.11	+	1300	10	0.25	mRNA
+T2	G1	Gene1	NC_000001.11	+	1003	20	0.8	mRNA
+T2	G1	Gene1	NC_000001.11	+	1302	5	0.2	mRNA
+T3	G2	Gene2	NC_000001.11	-	2000	60	1.0	mRNA
+T4	G3	Gene3	NC_000001.11	+	3000	12	1.0	mRNA

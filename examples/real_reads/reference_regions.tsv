@@ -1,0 +1,3 @@
+contig	original_chromosome	original_start_0based	original_end_0based_exclusive	transcript_ids
+GAPDH_region	NC_000012.12	6532516	6540371	NM_001289746.2;NM_002046.7
+PRDX1_region	NC_000001.11	45509050	45523884	NM_181697.3

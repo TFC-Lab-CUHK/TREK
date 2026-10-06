@@ -1,0 +1,5 @@
+transcript_id	gene_id	gene_name	chromosome	strand	ID	site_position	site_count	site_abundance	transcript_biotype
+NM_001289746.2	2597	GAPDH	GAPDH_region	+	GAPDH_region:5855:+	5855	60	1.0000	mRNA
+NM_002046.7	2597	GAPDH	GAPDH_region	+	GAPDH_region:5855:+	5855	76	1.0000	mRNA
+NM_181697.3	5052	PRDX1	PRDX1_region	-	PRDX1_region:2003:-	2003	72	0.7200	mRNA
+NM_181697.3	5052	PRDX1	PRDX1_region	-	PRDX1_region:2177:-	2177	28	0.2800	mRNA
